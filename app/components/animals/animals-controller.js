@@ -46,16 +46,17 @@ function AnimalsController() {
     this.showAddAnimalForm = function showAddAnimalForm() {
         if(formstate) {
             showAnimalButton.innerText = 'Add Listing'
-            showButton.className = 'btn btn-info'
+            showAnimalButton.className = 'btn btn-info'
             animalsFormElem.classList.add('hidden')
             formstate = false
         } else {
-            showButton.innerText = 'Cancel'
-            showButton.className = 'btn btn-danger'
+            showAnimalButton.innerText = 'Cancel'
+            showAnimalButton.className = 'btn btn-danger'
             animalsFormElem.classList.remove('hidden')
             formstate = true
         }
     }
+    
     drawAnimals()
 
 

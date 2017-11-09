@@ -15,7 +15,8 @@ function AnimalsService () {
     
         var id = 0
     
-        function Auto(config){
+        function Animal(config){
+            
             this.title = config.title.value
             this.id = id++
             this.age = config.age.value
@@ -25,6 +26,7 @@ function AnimalsService () {
             this.img = config.img.value
             this.location = config.location.value
             this.contact = config.contact.value
+            this.price = config.price.value
         }
     
         this.getAnimals = function getAnimals(){
@@ -41,7 +43,8 @@ function AnimalsService () {
         }
     
         this.addAnimal = function addAnimal(form){
-            var newAnimal = new AnimalsController(form)
+            
+            var newAnimal = new Animal(form)
             animals.unshift(newAnimal)
         }
     }

@@ -33,40 +33,40 @@
                                 <input type="text" name="make" class="form-control" placeholder="Make">
                             </div>
                             <div class="form-group">
-                                <label for="model">model:</label>
-                                <input type="text" name="model" class="form-control" placeholder="model">
+                                <label for="model">Model:</label>
+                                <input type="text" name="model" class="form-control" placeholder="Model">
                             </div>
                             <div class="form-group">
-                                <label for="year">year:</label>
-                                <input type="text" name="year" class="form-control" placeholder="year">
+                                <label for="year">Year:</label>
+                                <input type="text" name="year" class="form-control" placeholder="Year">
                             </div>
                             <div class="form-group">
-                                <label for="mileage">mileage:</label>
-                                <input type="text" name="mileage" class="form-control" placeholder="mileage">
+                                <label for="mileage">Mileage:</label>
+                                <input type="text" name="mileage" class="form-control" placeholder="Mileage">
                             </div>
                             <div class="form-group">
-                                <label for="color">color:</label>
+                                <label for="color">Color:</label>
                                 <input type="text" name="color" class="form-control" placeholder="color">
                             </div>
                             <div class="form-group">
-                                <label for="price">price:</label>
-                                <input type="text" name="price" class="form-control" placeholder="price" required>
+                                <label for="price">Price:</label>
+                                <input type="text" name="price" class="form-control" placeholder="Price" required>
                             </div>
                             <div class="form-group">
-                                <label for="condition">condition:</label>
-                                <input type="text" name="condition" class="form-control" placeholder="condition">
+                                <label for="condition">Condition:</label>
+                                <input type="text" name="condition" class="form-control" placeholder="Condition">
                             </div>
                             <div class="form-group">
-                                <label for="description">description:</label>
-                                <input type="text" name="description" class="form-control" placeholder="description" required>
+                                <label for="description">Description:</label>
+                                <input type="text" name="description" class="form-control" placeholder="Description" required>
                             </div>
                             <div class="form-group">
-                                <label for="location">location:</label>
-                                <input type="text" name="location" class="form-control" placeholder="location">
+                                <label for="location">Location:</label>
+                                <input type="text" name="location" class="form-control" placeholder="Location">
                             </div>
                             <div class="form-group">
-                                <label for="contact">contact:</label>
-                                <input type="text" name="contact" class="form-control" placeholder="contact" required>
+                                <label for="contact">Contact:</label>
+                                <input type="text" name="contact" class="form-control" placeholder="Contact" required>
                             </div>
                             <div class="form-group">
                                 <label for="img">img:</label>
@@ -99,12 +99,12 @@
         </div>
         <div class="row beta text-center">
             <div class="col-md-12">
-                <div class="row innera text-center">
+                <div class="row innerb text-center">
                     <div class="col-sm-6 col-sm-offset-3">
-                        <button id="show-button" class="btn btn-info" onclick="app.controllers.animalsCtrl.showAddAnimalForm()">Add A Listing</button>
+                        <button id="show-animal-button" class="btn btn-info" onclick="app.controllers.animalsCtrl.showAddAnimalForm()">Add A Listing</button>
                     </div>
                 </div>
-                <div class="row innera text-center">
+                <div class="row innerb text-center">
                     <div class="col-sm-6 col-sm-offset-3 hidden" id="add-animal-form">
                         <form class="form" onsubmit="app.controllers.animalsCtrl.addAnimal(event)">
                             <div class="form-group">
@@ -135,7 +135,10 @@
                                 <label for="img">Image:</label>
                                 <input type="text" name="img" class="form-control" placeholder="Image">
                             </div>
-
+                            <div class="form-group">
+                                <label for="location">location:</label>
+                                <input type="text" name="location" class="form-control" placeholder="location">
+                            </div>
                             <div class="form-group">
                                 <label for="description">Description:</label>
                                 <input type="text" name="description" class="form-control" placeholder="description" required>
@@ -163,6 +166,79 @@
                     </div>
                     <div class="panel-footer">
                         <h5>$ 20</h5>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="row gamma text-center">
+            <div class="col-md-12">
+                <div class="row innerg text-center">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <button id="show-property-button" class="btn btn-info" onclick="app.controllers.propertiesCtrl.showAddPropertyForm()">Add A Listing</button>
+                    </div>
+                </div>
+                <div class="row innerg text-center">
+                    <div class="col-sm-6 col-sm-offset-3 hidden" id="add-property-form">
+                        <form class="form" onsubmit="app.controllers.propertiesCtrl.addProperty(event)">
+                            <div class="form-group">
+                                <label for="title">Title:</label>
+                                <input type="text" name="title" class="form-control" placeholder="Title" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="type">Type:</label>
+                                <input type="text" name="type" class="form-control" placeholder="Type">
+                            </div>
+                            <div class="form-group">
+                                <label for="squarefootage">Square Footage:</label>
+                                <input type="text" name="squarefootage" class="form-control" placeholder="Square Footage">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address:</label>
+                                <input type="text" name="address" class="form-control" placeholder="Address">
+                            </div>
+                            <div class="form-group">
+                                <label for="price">Price:</label>
+                                <input type="text" name="price" class="form-control" placeholder="Price" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact">Contact:</label>
+                                <input type="text" name="contact" class="form-control" placeholder="Contact">
+                            </div>
+                            <div class="form-group">
+                                <label for="img">Image:</label>
+                                <input type="text" name="img" class="form-control" placeholder="Image">
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Location:</label>
+                                <input type="text" name="location" class="form-control" placeholder="Location">
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Description:</label>
+                                <input type="text" name="description" class="form-control" placeholder="Description" required>
+                            </div>
+
+                            <div class="form-group">
+                                <button class="btn btn-success" type="submit">Add Property</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row" id='properties-list'>
+            <!-- <div class="col-md-3">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3>Property Title</h3>
+                        <h6>Location</h6>
+                    </div>
+                    <div class="panel-body text-center">
+                        <img src="//loremflickr.com/200/200/home">
+                        <h4>Type - Squarefootage</h4>
+                    </div>
+                    <div class="panel-footer">
+                        <h5>$ 650</h5>
                     </div>
                 </div>
             </div> -->
