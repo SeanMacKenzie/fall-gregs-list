@@ -39,6 +39,7 @@ function AnimalsController() {
         animalsService.addAnimal(form)
         animalsFormElem.classList.toggle('hidden', true)
         drawAnimals()
+        this.showAddAnimalForm()
     }
     
     var formstate = false

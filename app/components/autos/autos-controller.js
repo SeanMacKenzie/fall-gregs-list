@@ -43,6 +43,7 @@ function AutosController() {
     autosService.addAuto(form)
     autosFormElem.classList.toggle('hidden', true)
     drawAutos()
+    this.showAddAutoForm()
   }
   var formstate = false
   

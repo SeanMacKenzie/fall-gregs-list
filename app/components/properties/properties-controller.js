@@ -39,6 +39,7 @@ function PropertiesController() {
         propertiesService.addProperty(form)
         propertiesFormElem.classList.toggle('hidden', true)
         drawProperties()
+        this.showAddPropertyForm()
     }
     var formstate = false
 
