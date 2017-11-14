@@ -4,6 +4,7 @@ var dbConnect = require('./config/mlab/mlab-config')
 var autoRoutes = require('./server-assets/routes/auto-routes')
 var animalRoutes = require('./server-asset/routes/animal-routes')
 var propertyRoutes = require('./server-asset/routes/property-route')
+var bookRoutes = require('./server-asset/routes/book-routes')
 
 var server = express()
 var port = 3000
@@ -16,6 +17,7 @@ server.use(bp.urlencoded({ extended: true }))
 server.use(autoRoutes)
 server.use(animalRoutes)
 server.use(propertyRoutes)
+server.use(bookRoutes)
 
 
 server.listen(port, () => {
