@@ -241,6 +241,68 @@
                 </div>
             </div> -->
         </div>
+        <div class="row delta text-center">
+            <div class="col-md-12">
+                <div class="row innerd text-center">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <button id="show-book-button" class="btn btn-info" onclick="app.controllers.booksCtrl.showAddBookForm()">Add A Listing</button>
+                    </div>
+                </div>
+                <div class="row innerg text-center">
+                    <div class="col-sm-6 col-sm-offset-3 hidden" id="add-book-form">
+                        <form class="form" onsubmit="app.controllers.booksCtrl.addBook(event)">
+                            <div class="form-group">
+                                <label for="title">Title:</label>
+                                <input type="text" name="title" class="form-control" placeholder="Title" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="price">Price:</label>
+                                <input type="text" name="price" class="form-control" placeholder="Price" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact">Contact:</label>
+                                <input type="text" name="contact" class="form-control" placeholder="Contact" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="img">Image:</label>
+                                <input type="text" name="img" class="form-control" placeholder="Image">
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Location:</label>
+                                <input type="text" name="location" class="form-control" placeholder="Location">
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Description:</label>
+                                <input type="text" name="description" class="form-control" placeholder="Description" required>
+                            </div>
+
+                            <div class="form-group">
+                                <button class="btn btn-success" type="submit">Add Book</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row" id="books-list">
+            <!-- <div class="col-md-3">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3>Book Title</h3>
+                        <h6>Location</h6>
+                    </div>
+                    <div class="panel-body text-center">
+                        <img src="//loremflickr.com/200/200/home">
+                        <h4>Condition</h4>
+                    </div>
+                    <div class="panel-footer">
+                        <h5>$ 650</h5>
+                    </div>
+                </div>
+            </div> -->
+        </div>
     </div>
 
 
